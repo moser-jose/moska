@@ -1,0 +1,87 @@
+{
+    "musicas":[
+        {
+            "id": "1",
+            "music_album":17,
+            "url": "https://github.com/moser-jose/moska/releases/download/vMusics/17.Saturday.Nights.mp3",
+            "title": "Saturday Nights",
+            "artist": "Khalid",
+            "artist_ft": "Khalid",
+            "album": "Free Spirit",
+            "genre": [
+                {
+                    "name": "R&B"
+                },
+                {
+                    "name": "Soul"
+                }
+            ],
+            "date": "2018-05-20T07:00:00+00:00",
+            "artwork": "https://upload.wikimedia.org/wikipedia/pt/6/6c/Free_Spirit_de_Khalid.png",
+            "artwork_artist": "https://static.wikia.nocookie.net/wherearetheavocados/images/f/f1/Khalid.jpg/revision/latest?cb=20180419233016",
+            "artwork_artist_cover": "https://3.bp.blogspot.com/-dWpHykfIXAc/XI0Cetfk_hI/AAAAAAAAedA/zfT7wrEX5SUSsR0ACCbRGK8pt8ffxpjDQCLcBGAs/s1600/khalid-2018-cr-RoLexx-billboard-1548.jpg"
+
+        },
+        {
+            "id": "2",
+            "music_album":8,
+            "url": "https://github.com/moser-jose/moska/releases/download/vMusics/17.Saturday.Nights.mp3",
+            "title": "Minha Dica",
+            "artist": "Abdiel",
+            "artist_ft": "Abdiel",
+            "album": "O Especialista Vol 6 - Minha Instrução",
+            "genre": [
+                {
+                    "name": "Rap"
+                },
+                {
+                    "name": "Hip-Hop"
+                }
+            ],
+            "date": "2018-05-20T07:00:00+00:00",
+            "artwork": "https://2.bp.blogspot.com/-P0TNViPjXbE/UQtuvwWtgsI/AAAAAAAAIJ4/sFZbvyLHbgw/s1600/Abdiel+-+O+Especialista+Vol.+6+-+Minha+Instru%C3%A7%C3%A3o.jpg",
+            "artwork_artist": "http://lea.co.ao/artistas/imgs/abdiel-na-lea.jpg",
+            "artwork_artist_cover": "https://3.bp.blogspot.com/-dWpHykfIXAc/XI0Cetfk_hI/AAAAAAAAedA/zfT7wrEX5SUSsR0ACCbRGK8pt8ffxpjDQCLcBGAs/s1600/khalid-2018-cr-RoLexx-billboard-1548.jpg"
+
+        },
+         {
+            "id": "3",
+            "music_album":17,
+            "url": "https://github.com/moser-jose/moska/releases/download/vMusics/17.Saturday.Nights.mp3",
+            "title": "Vai Dormir",
+            "artist": "Anderson Mário",
+            "artist_ft": "Anderson Mário",
+            "album": "Vai Dormir",
+            "genre": [
+                {
+                    "name": "Semba"
+                }
+            ],
+            "date": "2018-05-20T07:00:00+00:00",
+            "artwork": "https://1.bp.blogspot.com/-exTuckRBVsU/Xwbt47Nh4iI/AAAAAAAADeE/nyB7N6OILbk7YowYQZiyHlhhMnCj6A6oACLcBGAsYHQ/s1600/Anderson.jpg",
+            "artwork_artist": "https://bateubwe.co.ao/wp-content/uploads/2020/09/CE74F560-B47A-48DC-AF72-5BAD6B2F49FC.jpeg",
+            "artwork_artist_cover": "https://bateubwe.co.ao/wp-content/uploads/2020/09/AND.jpg"
+
+        }
+    ],
+    "explore":[
+        {
+            "id":1,
+            "name":"Albuns"
+        },
+        {
+            "id":2,
+            "name":"Artistas"
+        }
+        ,
+        {
+            "id":3,
+            "name":"Musicas"
+        }
+        ,
+        {
+            "id":4,
+            "name":"Playlists"
+        }
+    ]
+}
