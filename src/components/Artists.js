@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/native';
 import {Image, FlatList} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 const Container = styled.View`
     justify-content: center;
     margin-right: 10px;
@@ -31,48 +32,45 @@ const TextTitleText = styled.Text`
 `;
 
 export default ({data}) => {
+    const navigation = useNavigation();
     return (
         <FlatList
             horizontal
             showsHorizontalScrollIndicator={false}
             data={data}
-            keyExtractor={(item) => item.id}
+            keyExtractor={(item) => item.id.toString()}
             showsVerticalScrollIndicator={false}
-            renderItem={MusicRecent}
+            renderItem={Atists}
         />
     );
-    function MusicRecent(item) {
-        const {
-            id,
-            title,
-            music_album,
-            url,
-            artist,
-            album,
-            artist_ft,
-            genre,
-            date,
-            artwork,
-            artwork_artist,
-            artwork_artist_cover,
-        } = item.item;
+    function Atists(item) {
+        const {id, name, artwork, album, artwork_cover} = item.item;
+        const HandleRoute = () => {
+            navigation.navigate('ArtistsScreen', {
+                id: id,
+                artist: name,
+                artwork: artwork,
+                artwork_cover: artwork_cover,
+                album: album,
+            });
+        };
         return (
             <Container>
-                <ImagemContainer style={{elevation: 4}}>
+                <ImagemContainer style={{elevation: 4}} onPress={HandleRoute}>
                     <Image
-                        source={{uri: artwork_artist}}
+                        source={{uri: artwork}}
                         style={{
                             width: '100%',
                             height: '100%',
                         }}
                     />
                 </ImagemContainer>
-                <TextContainer>
+                <TextContainer onPress={HandleRoute}>
                     <TextTitle>
                         <TextTitleText numberOfLines={1}>
-                            {artist.length < 20
-                                ? `${artist}`
-                                : `${artist.substring(0, 32)}...`}
+                            {name.length < 20
+                                ? `${name}`
+                                : `${name.substring(0, 32)}...`}
                         </TextTitleText>
                     </TextTitle>
                 </TextContainer>

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/native';
+import {useRoute, useNavigation} from '@react-navigation/native';
 import {Image, FlatList} from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 const Container = styled.View`
@@ -46,34 +47,32 @@ const TitleMusics = styled.View`
 `;
 
 export default ({data}) => {
+    const navigation = useNavigation();
     return (
         <FlatList
             horizontal
             showsHorizontalScrollIndicator={false}
             data={data}
-            keyExtractor={(item) => item.id}
+            keyExtractor={(item) => item.id.toString()}
             showsVerticalScrollIndicator={false}
             renderItem={Album}
         />
     );
     function Album(item) {
-        const {
-            id,
-            title,
-            music_album,
-            url,
-            artist,
-            album,
-            artist_ft,
-            genre,
-            date,
-            artwork,
-            artwork_artist,
-            artwork_artist_cover,
-        } = item.item;
+        const {id, name, numb_musics, musics, artist, artwork} = item.item;
+
+        const HandleAlbum = () => {
+            navigation.navigate('AlbumMusics', {
+                id: id,
+                name: name,
+                artwork: artwork,
+                musics: musics,
+                artist: artist.name,
+            });
+        };
         return (
             <Container>
-                <ImagemContainer style={{elevation: 6}}>
+                <ImagemContainer onPress={HandleAlbum} style={{elevation: 6}}>
                     <Image
                         source={{uri: artwork}}
                         style={{
@@ -85,9 +84,9 @@ export default ({data}) => {
                 <TextContainer>
                     <TextTitle>
                         <TextTitleText numberOfLines={1}>
-                            {album.length < 20
-                                ? `${album}`
-                                : `${album.substring(0, 20)}...`}
+                            {name.length < 20
+                                ? `${name}`
+                                : `${name.substring(0, 20)}...`}
                         </TextTitleText>
                         <TitleArtist>
                             <TextTitleText
@@ -95,10 +94,12 @@ export default ({data}) => {
                                     fontSize: 9,
                                     fontFamily: 'Poppins-Regular',
                                 }}>
-                                {artist_ft}
+                                {artist.name}
                             </TextTitleText>
                             <TitleMusics>
-                                <TextTitleTextMusicas>23</TextTitleTextMusicas>
+                                <TextTitleTextMusicas>
+                                    {numb_musics}
+                                </TextTitleTextMusicas>
                                 <MaterialIcons
                                     name="music-note"
                                     color="#FF2D55"

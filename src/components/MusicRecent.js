@@ -64,7 +64,7 @@ export default ({data}) => {
         } = item.item;
         return (
             <Container>
-                <ImagemContainer>
+                <ImagemContainer style={{elevation: 5}}>
                     <Image
                         source={{uri: artwork}}
                         style={{

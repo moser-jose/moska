@@ -9,7 +9,7 @@ const Container = styled.View`
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 10px 10px;
+    padding: 10px 20px;
 `;
 const SearchContainer = styled.View`
     flex-direction: row;
@@ -25,6 +25,7 @@ const SearchBotton = styled.View`
     padding: 0 8px;
     flex-direction: row;
     height: 50px;
+    elevation: 6;
 `;
 const UserBotton = styled.View`
     flex: 0.8;
@@ -60,7 +61,10 @@ export default () => {
                         />
                     </SearchBottonInput>
                 </SearchBotton>
-                <UserBotton>
+                <UserBotton
+                    style={{
+                        elevation: 9,
+                    }}>
                     <Image
                         source={require('../assets/img/khalid.png')}
                         style={{

@@ -21,16 +21,12 @@ const TabItem = styled.TouchableOpacity`
     justify-content: center;
     align-items: center;
 `;
-
-const TabItemHome = styled.TouchableOpacity`
-    width: 50px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    background: #29c17e;
-    border-radius: 25px;
+const Bola = styled.View`
+    background-color: #ff2d5580;
+    height: 7px;
+    width: 7px;
+    border-radius: 3.5px;
     margin-top: 5px;
-    elevation: 2;
 `;
 
 export default ({state, navigation}) => {
@@ -39,17 +35,20 @@ export default ({state, navigation}) => {
     };
     return (
         <TabArea>
-            <TabItem onPress={() => goTo('Search')}>
+            <TabItem onPress={() => goTo('Home')}>
                 <SearchIcon width="21" fill="#0D0A1E" />
             </TabItem>
-            <TabItem onPress={() => goTo('Categories')}>
+            <TabItem onPress={() => goTo('AllMusics')}>
                 <MusicIcon width="21" fill="#0D0A1E" />
+                {state.index === 1 && <Bola />}
             </TabItem>
             <TabItem onPress={() => goTo('Home')}>
                 <HomeIcon fill="#0D0A1E" />
+
+                {state.index === 0 && <Bola />}
             </TabItem>
 
-            <TabItem onPress={() => goTo('Favorites')}>
+            <TabItem onPress={() => goTo('Home')}>
                 <ConfigurationIcon width="22" fill="#0D0A1E" />
             </TabItem>
         </TabArea>

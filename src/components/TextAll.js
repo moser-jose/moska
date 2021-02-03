@@ -14,15 +14,15 @@ const TextView = styled.View`
 const Text = styled.Text`
     font-family: 'Poppins-Bold';
 `;
-export default ({name}) => {
+export default ({name, ver}) => {
     return (
         <Container>
             <TextView>
                 <Text style={{fontSize: 18}}>{name}</Text>
             </TextView>
             <TextView>
-                <Text style={{fontSize: 10, marginRight: 5}}>Ver todos</Text>
-                <FontAwesome5 size={18} name="caret-right" color="#8890A6" />
+                <Text style={{fontSize: 10, marginRight: 5}}>{ver}</Text>
+                {/* <FontAwesome5 size={18} name="caret-right" color="#8890A6" /> */}
             </TextView>
         </Container>
     );

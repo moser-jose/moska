@@ -41,10 +41,10 @@
             "date": "2018-05-20T07:00:00+00:00",
             "artwork": "https://2.bp.blogspot.com/-P0TNViPjXbE/UQtuvwWtgsI/AAAAAAAAIJ4/sFZbvyLHbgw/s1600/Abdiel+-+O+Especialista+Vol.+6+-+Minha+Instru%C3%A7%C3%A3o.jpg",
             "artwork_artist": "http://lea.co.ao/artistas/imgs/abdiel-na-lea.jpg",
-            "artwork_artist_cover": "https://3.bp.blogspot.com/-dWpHykfIXAc/XI0Cetfk_hI/AAAAAAAAedA/zfT7wrEX5SUSsR0ACCbRGK8pt8ffxpjDQCLcBGAs/s1600/khalid-2018-cr-RoLexx-billboard-1548.jpg"
+            "artwork_artist_cover": "http://4.bp.blogspot.com/-zrehL8iyteM/UiCZAKibobI/AAAAAAAAAiw/DVVbeRiuCro/s320/abdiel.jpg"
 
         },
-         {
+        {
             "id": "3",
             "music_album":17,
             "url": "https://github.com/moser-jose/moska/releases/download/vMusics/17.Saturday.Nights.mp3",
@@ -62,6 +62,86 @@
             "artwork_artist": "https://bateubwe.co.ao/wp-content/uploads/2020/09/CE74F560-B47A-48DC-AF72-5BAD6B2F49FC.jpeg",
             "artwork_artist_cover": "https://bateubwe.co.ao/wp-content/uploads/2020/09/AND.jpg"
 
+        }
+        ,
+        {
+            "id": "4",
+            "music_album":2,
+            "url": "https://github.com/moser-jose/moska/releases/download/vMusics/17.Saturday.Nights.mp3",
+            "title": "Finally Feel Good",
+            "artist": "James Arthur",
+            "artist_ft": "James Arthur",
+            "album": "You",
+            "genre": [
+                {
+                    "name": "MULK"
+                }
+            ],
+            "date": "2018-05-20T07:00:00+00:00",
+            "artwork": "https://studiosol-a.akamaihd.net/uploadfile/letras/albuns/3/3/7/6/801781571438169.jpg",
+            "artwork_artist": "https://i.pinimg.com/originals/5e/3a/e9/5e3ae94b12b1a37f4fe6ecb36c062eb0.jpg",
+            "artwork_artist_cover": "https://portalpopline.com.br/wp-content/uploads/2019/10/James-Arthur-1.jpg"
+
+        }
+        ,
+        {
+            "id": "5",
+            "music_album":16,
+            "url": "https://github.com/moser-jose/moska/releases/download/vMusics/17.Saturday.Nights.mp3",
+            "title": "Heaven",
+            "artist": "Khalid",
+            "artist_ft": "Khalid",
+            "album": "Free Spirit",
+            "genre": [
+                {
+                    "name": "Electro"
+                }
+            ],
+            "date": "2018-05-20T07:00:00+00:00",
+            "artwork": "https://upload.wikimedia.org/wikipedia/pt/6/6c/Free_Spirit_de_Khalid.png",
+            "artwork_artist": "https://static.wikia.nocookie.net/wherearetheavocados/images/f/f1/Khalid.jpg/revision/latest?cb=20180419233016",
+            "artwork_artist_cover": "https://3.bp.blogspot.com/-dWpHykfIXAc/XI0Cetfk_hI/AAAAAAAAedA/zfT7wrEX5SUSsR0ACCbRGK8pt8ffxpjDQCLcBGAs/s1600/khalid-2018-cr-RoLexx-billboard-1548.jpg"
+
+
+        }
+    ],
+    "artists":[
+        
+    ],
+    "albuns":[
+        {
+            "id":"1",
+            "album":"Free Spirit",
+            "artist":"Khalid",
+            "artwork": "https://upload.wikimedia.org/wikipedia/pt/6/6c/Free_Spirit_de_Khalid.png"
+        }
+        ,
+        {
+            "id":"2",
+            "album":"O Especialista Vol 6 - Minha Instrução",
+            "artist":"Abdiel",
+            "artwork": "https://2.bp.blogspot.com/-P0TNViPjXbE/UQtuvwWtgsI/AAAAAAAAIJ4/sFZbvyLHbgw/s1600/Abdiel+-+O+Especialista+Vol.+6+-+Minha+Instru%C3%A7%C3%A3o.jpg"
+        }
+        ,
+        {
+            "id":"3",
+            "album":"Vai Dormir",
+            "artist":"Anderson Mário",
+            "artwork": "https://1.bp.blogspot.com/-exTuckRBVsU/Xwbt47Nh4iI/AAAAAAAADeE/nyB7N6OILbk7YowYQZiyHlhhMnCj6A6oACLcBGAsYHQ/s1600/Anderson.jpg"
+        }
+        ,
+        {
+            "id":"4",
+            "album":"You",
+            "artist":"James Arthur",
+            "artwork": "https://studiosol-a.akamaihd.net/uploadfile/letras/albuns/3/3/7/6/801781571438169.jpg"
+        }
+        ,
+        {
+            "id":"5",
+            "album":"American Teen",
+            "artist":"Khalid",
+            "artwork": "https://images-na.ssl-images-amazon.com/images/I/81q%2BEaHfZWL._AC_SL1500_.jpg"
         }
     ],
     "explore":[

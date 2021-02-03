@@ -10,5 +10,5 @@ export const Musics = styled.View`
 `;
 
 export const Scroller = styled.ScrollView`
-    padding: 0 10px;
+    padding: 0 20px;
 `;
