@@ -1,7 +1,5 @@
 # `Moska`
 
-Este projeto tras todos os `610 hinos` do `Hinário Adventista do 7º dia`, com os seus respetivos `autores`, `compositores` e `textos bíblicos`, de forma totalmente organizada e com uma interface totalmente simples e interativa como nunca se viu. Veja o site em [https://hinario-adventista.vercel.app/](https://hinario-adventista.vercel.app/)
-
 <p align="center">
     <img src="src/assets/img/logo_name.svg" width="30%">
 </p>
@@ -33,7 +31,7 @@ Todos os requisitos aqui listados são indispensáveis para o desenvolvimento do
 
 Para fazer um pull-request, primeiramente crie um fork do projeto para a sua conta, então clone o projeto em sua maquina:
 
-`git clone https://github.com/moser-jose/Hina7.git`
+`git clone https://github.com/moser-jose/moska.git`
 
 usa o comando `npm install` para instalar todas as dependências do projeto.
 
